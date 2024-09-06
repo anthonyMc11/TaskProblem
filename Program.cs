@@ -11,8 +11,8 @@ while (true)
 
     timer.Restart();
     timer.Start();
-    Thread.Sleep(1);
-    //await Task.Delay(1);
+    //Thread.Sleep(1);
+    await Task.Delay(1);
     timer.Stop();
     Console.WriteLine($"Task time {timer.Elapsed.TotalMilliseconds} {Thread.CurrentThread.ManagedThreadId}");
 }

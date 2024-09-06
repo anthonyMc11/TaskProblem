@@ -1,0 +1,15 @@
+version: "3.9"
+name: timingtest
+
+services:
+  TimeTest:
+    container_name: timing-test
+    image: timingtest:dev
+    restart: unless-stopped
+    privileged: true
+    build:
+      context: ./
+      dockerfile: Dockerfile
+ 
+ 
+ 
